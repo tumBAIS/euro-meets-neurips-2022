@@ -71,7 +71,7 @@ bash master_experiments.sh
 
 
 
-## Evaluate ML-CO policy
+## 3. Evaluate ML-CO policy
 The evaluation of different benchmark policies and the ML-CO policy mainly bases on the [code provided from the EURO Meets NeurIPS 2022 Vehicle Routing Competition](https://github.com/ortec/euro-neurips-vrp-2022-quickstart).
 1. Define the evaluation configuration in `./evaluation/src/config.py`
 2. To start evaluating policies go to `./evaluation/` and run
