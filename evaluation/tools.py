@@ -3,7 +3,6 @@ import numpy as np
 import subprocess
 import tempfile
 import time
-from pathlib import Path
 import pandas as pd
 import os
 
@@ -128,7 +127,6 @@ def format_pchgs_instance_as_json(args, instance: dict, profits=None) -> dict:
 
 def solve_pchgs(args, instance, executable, time_limit=3600, seed=1):
     time_before_start_pchgs = time.time()
-    #tmp_sol_name = Path(tmp_dir) / 'solution.json'
     with subprocess.Popen([
         "./" + str(executable), "-", 
                               "-t", str(int(max(time_limit - 2, 1))), 

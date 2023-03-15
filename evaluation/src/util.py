@@ -8,17 +8,9 @@ import tensorflow as tf
 def set_additional_args(args):
     args.predictor = args.strategy
 
-    #if args.experiment is None:
-    #    raise Exception("We must define experiment")
     if args.strategy in ["NeuralNetwork", "Linear", "GraphNeuralNetwork", "GraphNeuralNetwork_sparse"]:
-        #if args.experiment == "experiment-0" and args.strategy == "NeuralNetwork":
-        #    args.result_directory = args.result_directory + "NeuralNetwork_experiment-0_all_20/" + args.instance.split("/")[-1]
-        #elif args.experiment == "experiment-7" and args.strategy == "NeuralNetwork":
-        #    args.result_directory = args.result_directory + f"NeuralNetwork_experiment-7_{args.time_limit}_all_20/" + args.instance.split("/")[-1]
-        #else:
         args.result_directory = args.result_directory + args.model_name + f"_timelimit-{args.time_limit}" + "/" + args.instance.split("/")[-1]
         args.model_name = args.model_directory + args.model_name
-        #assert (args.experiment in args.model_name) or (args.experiment in ["experiment-0", "experiment-7"])
     else:
         args.result_directory = args.result_directory + args.strategy + f"_timelimit-{args.time_limit}" + (("_samplingrounds-" + str(args.monte_carlo_sampling_rounds)) if args.strategy == "monte_carlo" else "") + "/" + args.instance.split("/")[-1]
 

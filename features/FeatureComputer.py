@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from training.src import util
 
 
 class FeatureComputer():

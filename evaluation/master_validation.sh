@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 TIME_LIMIT=90
 INSTANCE_DIRECTORY="./validation_instances/"
 STRATEGY="NeuralNetwork"

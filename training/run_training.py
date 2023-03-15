@@ -32,5 +32,8 @@ if __name__ == "__main__":
     # calculate features for training instances
     training_instances = create_features(args, training_instances)
 
+    # initalize optimizer
     optim = Optimizer(args=args, num_features=training_instances[0]["features"].shape[1], num_edge_features=training_instances[0]["edge_features"].shape[1])
+
+    # optimizer trains ML-CO policy
     optim.train(training_instances)
