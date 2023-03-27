@@ -32,9 +32,8 @@ Building PC-HGS requires
 1. Clone the repository and initialize submodules.
 
 ```bash
-  git clone https://oscm.maximilian-schiffer.com/euro-neurips22/pchgs/
+  git clone https://github.com/tumBAIS/euro-meets-neurips-2022.git
   cd pchgs
-  git submodule update --init --recursive
 ```
 
 2. Generate a makefile
