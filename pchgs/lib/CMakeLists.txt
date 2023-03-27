@@ -10,4 +10,7 @@ CPMAddPackage(
         GITHUB_REPOSITORY nlohmann/json
         VERSION 3.9.1)
 
-add_subdirectory(dynamic_bitset)
+CPMAddPackage(
+        NAME dynamic_bitset
+        GITHUB_REPOSITORY pinam45/dynamic_bitset
+        VERSION 1.2.1)
