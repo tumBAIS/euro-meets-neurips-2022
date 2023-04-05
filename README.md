@@ -4,7 +4,7 @@ This repository comprises the code to learn a dispatching and routing policy for
 The problem setting bases on the [EURO Meets NeurIPS 2022 Vehicle Routing Competition](https://euro-neurips-vrp-2022.challenges.ortec.com/)
 
 This method is proposed in:
-> Léo Baty, Kai Jungel, Patrick Klein, Axel Parmentier, and Maximilian Schiffer. Combinatorial Optimization enriched Machine Learning to solve the Dynamic Vehicle Routing Problem with Time Windows. arXiv preprint: [add link](...), 2023.
+> Léo Baty, Kai Jungel, Patrick Klein, Axel Parmentier, and Maximilian Schiffer. Combinatorial Optimization enriched Machine Learning to solve the Dynamic Vehicle Routing Problem with Time Windows. arXiv preprint: [arxiv:2304.00789](https://arxiv.org/abs/2304.00789), 2023.
 
 
 This repository contains all relevant scripts and data sets to reproduce the results from the paper. To run the code for reproducing the results we assume using *slurm*.
