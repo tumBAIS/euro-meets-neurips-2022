@@ -45,7 +45,7 @@ make
 #### Solving instances
 
 ```bash
-./pchgs instance.json <time_limit> -seed <seed> -veh -1 -useWallClockTime 1 -outputJSONPath solution.json
+./pchgs instance.json -t <time_limit> -seed <seed> -veh -1 -useWallClockTime 1 -outputJSONPath solution.json
 ```
 
 Runs pchgs on instance.json, with the time limit `<time_limit>` (seconds, wall clock time), an infinite number of

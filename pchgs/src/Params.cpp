@@ -177,11 +177,10 @@ void Params::_parse_vrplib(std::istream &inputFile) {
             // Read the demand of each client (including the depot, which should have demand 0)
         else if (content == "DEMAND_SECTION") {
             for (int i = 0; i <= nbClients; i++) {
-                int clientNr = 0;
-                inputFile >> clientNr >> cli[i].demand;
+                inputFile >> cli[i].requestIdx >> cli[i].demand;
 
                 // Check if the clients are in order
-                if (clientNr != i + 1) {
+                if (cli[i].requestIdx != i + 1) {
                     throw std::string("Clients are not in order in the list of demands");
                 }
             }
