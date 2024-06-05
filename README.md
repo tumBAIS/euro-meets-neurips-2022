@@ -87,3 +87,12 @@ Second, to start the final test run, go to `./evaluation/` and run
 ```bash 
 bash master_test.sh
 ```
+
+## 3. Visualize results from the paper
+Visualize the results of the paper via running
+
+```bash 
+python visualization.py
+```
+in `./evaluation/src`.
+Please note that we uploaded all result files in .zip format. Please unpack the folders before running `visualization.py`.
