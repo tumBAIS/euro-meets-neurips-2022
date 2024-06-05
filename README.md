@@ -88,7 +88,7 @@ Second, to start the final test run, go to `./evaluation/` and run
 bash master_test.sh
 ```
 
-## 3. Visualize results from the paper
+## 4. Visualize results from the paper
 Visualize the results of the paper via running
 
 ```bash 
