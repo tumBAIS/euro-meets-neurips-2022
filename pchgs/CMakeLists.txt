@@ -28,7 +28,7 @@ target_include_directories(
 
 target_compile_options(${PROJECT_NAME} PUBLIC "-Wall" "-Wextra" "-Wpedantic")
 target_compile_options(${PROJECT_NAME} PUBLIC "$<$<CONFIG:DEBUG>:-O0;-g3;-ggdb>")
-target_compile_options(${PROJECT_NAME} PUBLIC "$<$<CONFIG:RELEASE>:-O3;-s;-march=native;-mtune=native;-flto>")
+target_compile_options(${PROJECT_NAME} PUBLIC "$<$<CONFIG:RELEASE>:-O3;-s;-mtune=native;-flto>")
 target_compile_options(${PROJECT_NAME} PUBLIC "$<$<CONFIG:RELWITHDEBINFO>:-O3;-march=native;-g3;-ggdb;-fno-inline>")
 target_link_options(${PROJECT_NAME} PUBLIC "-flto")
 
